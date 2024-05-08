@@ -1,5 +1,5 @@
 on:
-  status:
+  status: {}
   check_suite:
     types:
       - completed
