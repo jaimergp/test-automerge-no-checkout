@@ -18,11 +18,12 @@ concurrency:
 
 jobs:
   tests:
+    name: Wait ${{ matrix.wait-time }}
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
-        wait-time: ["30", "60"]
+        wait-time: ["5", "10"]
     steps:
       - name: Checkout
         uses: actions/checkout@v4
